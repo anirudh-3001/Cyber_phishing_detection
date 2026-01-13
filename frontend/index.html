@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phishing Detection Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>🔒 Privacy-Preserving Phishing Detection</h2>
+
+    <input type="text" id="urlInput" placeholder="Paste suspicious URL here" />
+
+    <button onclick="checkUrl()">Analyze URL</button>
+
+    <!-- Detection Flow Steps -->
+    <div id="flowContainer" style="display: none;">
+      <h3>🔄 End-to-End Detection Process</h3>
+      
+      <div class="flow-step" id="step1">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <div class="step-title">Canonicalize URL</div>
+          <div class="step-description">Normalizing URL format...</div>
+        </div>
+      </div>
+
+      <div class="flow-step" id="step2">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <div class="step-title">Generate Fingerprint (HMAC-SHA512)</div>
+          <div class="step-description">Creating cryptographic hash...</div>
+          <div class="fingerprint-display" id="fingerprintDisplay" style="display: none;">
+            <strong>Fingerprint Generated:</strong>
+            <div class="fingerprint-box" id="fingerprintValue"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-step" id="step2b">
+        <div class="step-number">2b</div>
+        <div class="step-content">
+          <div class="step-title">Extract 12-char Prefix</div>
+          <div class="step-description">Taking first 12 characters of fingerprint...</div>
+          <div class="prefix-display" id="prefixDisplay" style="display: none;">
+            <strong>Prefix:</strong>
+            <div class="prefix-box" id="prefixValue"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-step" id="step3">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <div class="step-title">🗑️ Delete Original URL (Privacy)</div>
+          <div class="step-description">Original URL removed from memory for privacy preservation...</div>
+          <div class="delete-display" id="deleteDisplay" style="display: none;">
+            <div class="delete-message">✓ Original URL permanently deleted from memory</div>
+            <div class="delete-note">Only fingerprint prefix used for further analysis</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-step" id="step4">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <div class="step-title">Reputation Check</div>
+          <div class="step-description">Comparing prefix against known phishing database...</div>
+        </div>
+      </div>
+
+      <div class="flow-step" id="step5">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <div class="step-title">Extract ML Features</div>
+          <div class="step-description">Analyzing domain age, TLS, redirects, JavaScript...</div>
+        </div>
+      </div>
+
+      <div class="flow-step" id="step6">
+        <div class="step-number">6</div>
+        <div class="step-content">
+          <div class="step-title">ML Prediction (Random Forest)</div>
+          <div class="step-description">Running classifier for unknown URLs...</div>
+        </div>
+      </div>
+
+      <div class="flow-step" id="step7">
+        <div class="step-number">7</div>
+        <div class="step-content">
+          <div class="step-title">Final Result</div>
+          <div class="step-description" id="resultDescription">Determining threat level...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Result -->
+    <p id="status"></p>
+    <p id="methodInfo" style="font-size: 12px; color: #666;"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

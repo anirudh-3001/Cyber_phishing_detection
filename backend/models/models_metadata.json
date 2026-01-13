@@ -1,0 +1,125 @@
+{
+  "models": [
+    {
+      "timestamp": "20260113_225235",
+      "path": "models\\rf_model_20260113_225235.pkl",
+      "created_at": "2026-01-13T22:52:35.955166",
+      "metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "status": "active"
+    },
+    {
+      "timestamp": "20260113_224457",
+      "path": "models\\rf_model_20260113_224457.pkl",
+      "created_at": "2026-01-13T22:44:57.778940",
+      "metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "status": "active"
+    },
+    {
+      "timestamp": "20260113_224437",
+      "path": "models\\rf_model_20260113_224437.pkl",
+      "created_at": "2026-01-13T22:44:37.304151",
+      "metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "status": "active"
+    },
+    {
+      "timestamp": "20260113_224143",
+      "path": "models\\rf_model_20260113_224143.pkl",
+      "created_at": "2026-01-13T22:41:43.955545",
+      "metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "status": "active"
+    },
+    {
+      "timestamp": "20260113_224128",
+      "path": "models\\rf_model_20260113_224128.pkl",
+      "created_at": "2026-01-13T22:41:28.572368",
+      "metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "status": "active"
+    },
+    {
+      "timestamp": "20260113_224034",
+      "path": "models\\rf_model_20260113_224034.pkl",
+      "created_at": "2026-01-13T22:40:34.458022",
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.9166666666666666,
+        "f1": 0.6470588235294118
+      },
+      "status": "active"
+    },
+    {
+      "timestamp": "20260113_223854",
+      "path": "models\\rf_model_20260113_223854.pkl",
+      "created_at": "2026-01-13T22:38:54.600050",
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.9166666666666666,
+        "f1": 0.6470588235294118
+      },
+      "status": "active"
+    },
+    {
+      "timestamp": "20260113_223832",
+      "path": "models\\rf_model_20260113_223832.pkl",
+      "created_at": "2026-01-13T22:38:32.231256",
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.9166666666666666,
+        "f1": 0.6470588235294118
+      },
+      "status": "active"
+    },
+    {
+      "timestamp": "20260113_223450",
+      "path": "models\\rf_model_20260113_223450.pkl",
+      "created_at": "2026-01-13T22:34:50.438668",
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.9166666666666666,
+        "f1": 0.6470588235294118
+      },
+      "status": "active"
+    },
+    {
+      "timestamp": "20260113_223435",
+      "path": "models\\rf_model_20260113_223435.pkl",
+      "created_at": "2026-01-13T22:34:35.371631",
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.9166666666666666,
+        "f1": 0.6470588235294118
+      },
+      "status": "active"
+    }
+  ],
+  "current": "models\\rf_model_20260113_225235.pkl"
+}
