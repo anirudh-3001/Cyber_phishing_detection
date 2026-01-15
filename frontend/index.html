@@ -80,15 +80,99 @@
       <div class="flow-step" id="step6">
         <div class="step-number">6</div>
         <div class="step-content">
-          <div class="step-title">ML Prediction (Random Forest)</div>
-          <div class="step-description">Running classifier for unknown URLs...</div>
+          <div class="step-title">🤖 Hybrid Analysis (ML + Advanced Checks)</div>
+          <div class="step-description">Running Random Forest + WHOIS + SSL + Content Analysis...</div>
+          
+          <!-- ML Model Details -->
+          <div class="ml-details" id="mlDetails" style="display: none;">
+            <h4 style="margin-top: 15px; color: #2c3e50;">📊 Step-by-Step Analysis Breakdown</h4>
+            
+            <div style="margin-top: 12px; padding: 12px; background: #f8f9fa; border-radius: 5px;">
+              <strong style="color: #2c3e50;">1️⃣ Machine Learning Model (60% weight)</strong>
+              <div style="margin-left: 15px; margin-top: 8px; font-size: 12px;">
+                <div>🌳 Algorithm: Random Forest Classifier</div>
+                <div>🎯 Decision Trees: 200 trees analyzing features</div>
+                <div style="margin-top: 5px;">
+                  <div>📈 Feature Analysis:</div>
+                  <div style="margin-left: 10px; font-size: 11px; color: #555;">
+                    <div>• Domain Age: <span id="mlDomainAge">--</span> (68.25% importance)</div>
+                    <div>• HTTPS/TLS: <span id="mlTLS">--</span> (15.58% importance)</div>
+                    <div>• HTTP Redirects: <span id="mlRedirects">--</span> (13.37% importance)</div>
+                    <div>• Suspicious JS: <span id="mlJS">--</span> (2.80% importance)</div>
+                  </div>
+                </div>
+                <div style="margin-top: 8px; padding: 8px; background: white; border-left: 3px solid #3498db;">
+                  <strong>ML Prediction Score: <span id="mlScore" style="color: #3498db; font-size: 14px;">--</span></strong>
+                </div>
+              </div>
+            </div>
+            
+            <div style="margin-top: 12px; padding: 12px; background: #f8f9fa; border-radius: 5px;">
+              <strong style="color: #2c3e50;">2️⃣ Advanced Analysis (40% weight)</strong>
+              <div style="margin-left: 15px; margin-top: 8px; font-size: 12px;">
+                
+                <div style="margin-bottom: 10px;">
+                  <strong style="color: #27ae60;">🌍 WHOIS Domain Registration Analysis</strong>
+                  <div style="margin-left: 10px; font-size: 11px; color: #555; margin-top: 5px;">
+                    <div>Domain Age: <span id="whoisAge">--</span></div>
+                    <div>Registration Status: <span id="whoisStatus" style="color: #27ae60;">--</span></div>
+                    <div style="margin-top: 5px; padding: 5px; background: white; border-left: 3px solid #27ae60;">
+                      <strong>WHOIS Score: <span id="whoisScore" style="color: #27ae60;">--</span></strong>
+                    </div>
+                  </div>
+                </div>
+                
+                <div style="margin-bottom: 10px;">
+                  <strong style="color: #e74c3c;">🔒 SSL Certificate Validation</strong>
+                  <div style="margin-left: 10px; font-size: 11px; color: #555; margin-top: 5px;">
+                    <div>Certificate: <span id="sslStatus">--</span></div>
+                    <div>Domain Match: <span id="sslMatch">--</span></div>
+                    <div>Expiry: <span id="sslExpiry">--</span></div>
+                    <div style="margin-top: 5px; padding: 5px; background: white; border-left: 3px solid #e74c3c;">
+                      <strong>SSL Score: <span id="sslScore" style="color: #e74c3c;">--</span></strong>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <strong style="color: #f39c12;">📄 Content & HTML Analysis</strong>
+                  <div style="margin-left: 10px; font-size: 11px; color: #555; margin-top: 5px;">
+                    <div>Login Forms: <span id="contentForms">--</span></div>
+                    <div>Password Fields: <span id="contentPasswords">--</span></div>
+                    <div>Phishing Keywords: <span id="contentKeywords">--</span></div>
+                    <div>Suspicious Scripts: <span id="contentScripts">--</span></div>
+                    <div style="margin-top: 5px; padding: 5px; background: white; border-left: 3px solid #f39c12;">
+                      <strong>Content Score: <span id="contentScore" style="color: #f39c12;">--</span></strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div style="margin-top: 12px; padding: 12px; background: #ecf0f1; border-radius: 5px; border: 2px solid #34495e;">
+              <strong style="color: #2c3e50; font-size: 13px;">⚙️ Final Hybrid Score Calculation</strong>
+              <div style="margin-left: 15px; margin-top: 10px; font-size: 12px; font-family: monospace; background: white; padding: 10px; border-radius: 3px;">
+                <div>Final Score = (0.6 × ML) + (0.4 × Advanced)</div>
+                <div style="margin-top: 8px; color: #555;">
+                  <div>= (0.6 × <span id="hybridMlVal">--</span>) + (0.4 × <span id="hybridAdvVal">--</span>)</div>
+                  <div style="margin-top: 5px; padding: 8px; background: #f0f0f0; border-radius: 3px;">
+                    <strong style="font-size: 13px; color: #2c3e50;">= <span id="hybridFinal" style="color: #c0392b; font-size: 14px;">--</span></strong>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 10px; font-size: 11px; color: #555;">
+                <div>✓ Result > 0.5 = <span style="color: #e74c3c; font-weight: bold;">🚨 PHISHING</span></div>
+                <div>✓ Result ≤ 0.5 = <span style="color: #27ae60; font-weight: bold;">✅ LEGITIMATE</span></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="flow-step" id="step7">
         <div class="step-number">7</div>
         <div class="step-content">
-          <div class="step-title">Final Result</div>
+          <div class="step-title">Final Result & Confidence</div>
           <div class="step-description" id="resultDescription">Determining threat level...</div>
         </div>
       </div>

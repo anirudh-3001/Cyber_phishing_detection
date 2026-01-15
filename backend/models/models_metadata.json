@@ -1,6 +1,30 @@
 {
   "models": [
     {
+      "timestamp": "20260114_073558",
+      "path": "models\\rf_model_20260114_073558.pkl",
+      "created_at": "2026-01-14T07:35:58.594546",
+      "metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "status": "active"
+    },
+    {
+      "timestamp": "20260114_073505",
+      "path": "models\\rf_model_20260114_073505.pkl",
+      "created_at": "2026-01-14T07:35:05.995008",
+      "metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "status": "active"
+    },
+    {
       "timestamp": "20260113_225235",
       "path": "models\\rf_model_20260113_225235.pkl",
       "created_at": "2026-01-13T22:52:35.955166",
@@ -97,29 +121,32 @@
       "status": "active"
     },
     {
-      "timestamp": "20260113_223450",
-      "path": "models\\rf_model_20260113_223450.pkl",
-      "created_at": "2026-01-13T22:34:50.438668",
+      "timestamp": "20260114_192611",
+      "path": "models\\rf_model_20260114_192611.pkl",
+      "created_at": "2026-01-14T19:26:11.442281",
       "metrics": {
-        "accuracy": 0.5,
-        "precision": 0.5,
-        "recall": 0.9166666666666666,
-        "f1": 0.6470588235294118
+        "note": "Evaluation metrics computed on unseen test set"
       },
       "status": "active"
     },
     {
-      "timestamp": "20260113_223435",
-      "path": "models\\rf_model_20260113_223435.pkl",
-      "created_at": "2026-01-13T22:34:35.371631",
+      "timestamp": "20260114_200050",
+      "path": "models\\rf_model_20260114_200050.pkl",
+      "created_at": "2026-01-14T20:00:50.226557",
       "metrics": {
-        "accuracy": 0.5,
-        "precision": 0.5,
-        "recall": 0.9166666666666666,
-        "f1": 0.6470588235294118
+        "note": "Evaluation on unseen test set"
+      },
+      "status": "active"
+    },
+    {
+      "timestamp": "20260114_200445",
+      "path": "models\\rf_model_20260114_200445.pkl",
+      "created_at": "2026-01-14T20:04:45.315189",
+      "metrics": {
+        "note": "Evaluation on unseen test set"
       },
       "status": "active"
     }
   ],
-  "current": "models\\rf_model_20260113_225235.pkl"
+  "current": "models\\rf_model_20260114_200445.pkl"
 }

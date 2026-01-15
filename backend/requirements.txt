@@ -4,3 +4,5 @@ joblib
 python-whois
 requests
 apscheduler
+beautifulsoup4
+lxml
