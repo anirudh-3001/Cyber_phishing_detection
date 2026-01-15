@@ -64,7 +64,7 @@ python -m uvicorn api:app --reload
 
 | Metric | Value | Status |
 |--------|-------|--------|
-| **Accuracy** | ~97–98% | ✅ Excellent |
+| **Accuracy** | ~93-95% | ✅ Excellent |
 | **Precision** | ~96–98% | ✅ Minimal false positives |
 | **Recall** | ~98–99% | ✅ Catches most phishing |
 | **F1-Score** | ~97–98% | ✅ Strong balance |
@@ -465,12 +465,6 @@ Contributions are welcome! Areas for enhancement:
 ---
 
 ## 📄 License
-
-This project is open source and available under the **MIT License**.
-
-```
-MIT License
-
 Copyright (c) 2026 Anirudh Kulkarni
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -498,4 +492,4 @@ GitHub: [@anirudh-3001](https://github.com/anirudh-3001)
 **Last Updated**: January 2026  
 **Status**: ✅ Production Ready  
 **Model Type**: Explainable Hybrid Machine Learning System  
-**Model Accuracy**: ~97-98%
+**Model Accuracy**: ~93%
